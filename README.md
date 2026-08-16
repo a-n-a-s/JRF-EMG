@@ -14,6 +14,33 @@ plot of every electrode pair (simultaneous co-activation). Collapsing the portra
 
 `paper/paper.md` — full draft with embedded figures and results.
 
+## Highlights
+
+### From raw sEMG to a muscle-synergy fingerprint
+
+One 8-channel window becomes a single 8x8 image: diagonal blocks = each electrode's
+self-recurrence plot, off-diagonal blocks = the joint recurrence plot of every electrode
+pair (simultaneous co-activation). Collapsing the portrait gives a 28-dimensional
+muscle-synergy fingerprint.
+
+![From raw sEMG to a muscle-synergy fingerprint. (a) one 8-channel window; (b) self-RP of the thumb channel; (c) the full 8x8 JRP portrait; (d) the 28-dim synergy fingerprint.](figures/interpretability_pipeline.png)
+
+### The fingerprints are anatomically consistent
+
+Each gesture produces a distinct co-activation pattern. Thumb concentrates on the ch5
+(thenar) hub, little finger on ch7-centered pairs, rest is uniformly dark.
+
+![Per-gesture mean portraits. Diagonal = self-RPs, off-diagonal = joint RPs.](figures/fingerprint_mean_portraits.png)
+
+![Muscle-synergy chords: electrodes on the forearm ring; chord thickness/color = joint-recurrence density. Thumb shows a dense ch5 hub, rest is nearly empty.](figures/interpretability_chords.png)
+
+### Deviations from the average activation
+
+Differential portraits (gesture mean minus global mean) highlight which electrode pairs
+each gesture drives above or below average.
+
+![Differential fingerprints: red = above-average co-activation, blue = below-average.](figures/interpretability_differential.png)
+
 ## Repository layout
 
 ```
