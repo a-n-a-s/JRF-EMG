@@ -1,0 +1,12 @@
+# data (regenerate with src/build_jrp_dataset.py)
+data/
+*.npy
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# misc
+.DS_Store

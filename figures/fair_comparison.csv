@@ -1,0 +1,8 @@
+method,acc,f1,f1_std
+classical-80,0.9515,0.9546,0.0086
+RQA-40,0.7803,0.7669,0.0109
+JRQA-112,0.7401,0.7253,0.0096
+classical+JRQA-192,0.9493,0.9531,0.0062
+all (class+RQA+JRQA),0.9472,0.9512,0.0038
+portrait-36 (JRP mean),0.6665,0.6454,0.0117
+portrait+classical-116,0.9493,0.9527,0.0047
